@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+	<meta charset='utf-8'/>
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<title>jQuery elevateZoom Demo</title>
+	<script src='jquery-1.8.3.min.js'></script>
+
+	<script src='hammer.js'></script>
+
+
+	<script src='sylvester.js'></script>
+  <script src='imagezoomer.js'></script>
+
+<style>
+
+img {
+	transition:transform 0.0s linear;
+  -webkit-transition:-webkit-transform 0.0s linear;
+  max-height: 100%;
+
+  -webkit-transform-origin:0% 0%;
+  -webkit-transform: matrix(1,0,0,1,0,0);
+}
+
+</style>
+</head>
+
+<body style="margin:0; height: 100%;">
+
+  
+<div id='wrapper' style="position:relative; overflow: hidden; text-align: center; width : 100%; max-width: 100%; height: 100%; " class="zoomable">
+	 		 <img id='dog' src="dog.jpg" style="position:relative; left:0; top:0;"/>
+	</div>
+
+
+</body>
+</html>
+
